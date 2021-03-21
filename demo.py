@@ -43,6 +43,7 @@ def track(opt):
     cfg_dict = parse_model_cfg(opt.cfg)
     opt.img_size = [int(cfg_dict[0]['width']), int(cfg_dict[0]['height'])]
 
+    # test commit
     # run tracking
     timer = Timer()
     accs = []
