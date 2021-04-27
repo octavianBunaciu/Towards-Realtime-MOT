@@ -4,6 +4,7 @@ import time
 from time import gmtime, strftime
 import test
 from models import *
+from resnet import *
 from shutil import copyfile
 from utils.datasets import JointDataset, collate_fn
 from utils.utils import *
@@ -51,7 +52,8 @@ def train(
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True,
                                              num_workers=8, pin_memory=True, drop_last=True, collate_fn=collate_fn)
     # Initialize model
-    model = Darknet(cfg, dataset.nID)
+    # model = Darknet(cfg, dataset.nID)
+    model = ResNet(cfg, dataset.nID)
 
     cutoff = -1  # backbone reaches to cutoff layer
     start_epoch = 0
