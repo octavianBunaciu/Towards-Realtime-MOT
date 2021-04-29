@@ -204,7 +204,7 @@ if __name__ == '__main__':
                      MOT16-08
                      MOT16-12
                      MOT16-14'''
-        data_root = '/home/wangzd/datasets/MOT/MOT16/images/test'
+        data_root = '/content/drive/MyDrive/MOT17/images/train'
     seqs = [seq.strip() for seq in seqs_str.split()]
 
     main(opt,
