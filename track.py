@@ -187,14 +187,15 @@ if __name__ == '__main__':
  
     if not opt.test_mot16:
         seqs_str = '''MOT17-02-SDP
-                      MOT17-04-SDP
-                      MOT17-05-SDP
-                      MOT17-09-SDP
-                      MOT17-10-SDP
-                      MOT17-11-SDP
-                      MOT17-13-SDP
                     '''
-        data_root = '/home/wangzd/datasets/MOT/MOT17/images/train'
+        #                       MOT17-04-SDP
+        #                       MOT17-05-SDP
+        #                       MOT17-09-SDP
+        #                       MOT17-10-SDP
+        #                       MOT17-11-SDP
+        #                       MOT17-13-SDP
+
+        data_root = '/content/drive/MyDrive/MOT17/images/train'
     else:
         seqs_str = '''MOT16-01
                      MOT16-03
