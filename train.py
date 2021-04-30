@@ -52,8 +52,8 @@ def train(
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True,
                                              num_workers=8, pin_memory=True, drop_last=True, collate_fn=collate_fn)
     # Initialize model
-    # model = Darknet(cfg, dataset.nID)
-    model = ResNet(cfg, dataset.nID)
+    model = Darknet(cfg, dataset.nID)
+    # model = ResNet(cfg, dataset.nID)
 
     cutoff = -1  # backbone reaches to cutoff layer
     start_epoch = 0
